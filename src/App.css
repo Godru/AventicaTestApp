@@ -1,0 +1,233 @@
+
+/*--------------------------------------------------------------------------------*/
+
+button{
+    color: white;
+    display: block;
+    border: none;
+    margin: 12px 0 0;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+div{
+    box-sizing: border-box;
+}
+input{
+    box-sizing: border-box;
+    height: 28px;
+    padding-left: 10px;
+}
+body{
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.App{
+    min-height: 100vh;
+    border: 8px solid #ccf1be;
+    background-color: #a2a0f3;
+}
+.container{
+    min-height: calc( 100vh - 100px);
+    display: flex;
+}
+.left, .right{
+    min-height: 100%;
+}
+.left{
+    width: 244px;
+}
+.right{
+    border: 8px solid #ccf1be;
+    width: calc(100% - 184px);
+}
+.DraftZoneFlex{
+    display: flex;
+    align-items: stretch;
+}
+.Header{
+    position: relative;
+    display: flex;
+    padding: 15px;
+    border: 8px solid #ccf1be;
+}
+.Header span{
+    position: relative;
+    color: #f3c8d9;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: Arial;
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 100;
+}
+.counter{
+    transform: translateY(-50%);
+    padding-top: 3px;
+    text-align: center;
+    font-size: 28px;
+    right: 13px;
+    top: 50%;
+    position: absolute;
+    background-color: #d7dad3;
+    border-radius: 10px;
+    width: 39px;
+    height: 39px;
+}
+.InputZone{
+    padding: 15px 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid #ccf1be;
+
+}
+.InputZone input{
+    width: 184px;
+}
+.InputZone > div{
+    width: 184px;
+    display: flex;
+    justify-content: space-between;
+}
+.InputZone .save{
+    width: 100px;
+    padding: 7px 0;
+    background-color: #71d534;
+    color: white;
+}
+.InputZone .draft{
+    width: 71px;
+    padding: 7px 0;
+    background-color: #878382;
+    color: white;
+}
+.DraftZone{
+    position: relative;
+    min-height: calc( 100% - 124px);
+    padding: 15px 15px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 8px solid #ccf1be;
+}
+.DraftZone h1{
+    padding-left: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+.DraftCard{
+    position: relative;
+    margin-top: 25px;
+    background-color: #d8d8d8;
+    width: 184px;
+    padding: 10px 15px 20px;
+}
+.DraftCard p{
+    font-size: 19px;
+    height: 22px;
+
+}
+.DraftZone .remove{
+    background-color: #d92025;
+    padding:2px 5px;
+    font-size: 15px;
+    bottom: -11px;
+    left: 35px;
+    position: absolute;
+}
+.DraftZone .save{
+    background-color: #73d725;
+    padding:2px 11px;
+    font-size: 15px;
+    bottom: -11px;
+    position: absolute;
+    left: 115px;
+}
+.DraftZone input{
+    height: 22px;
+}
+.CardZone{
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+
+}
+.Card{
+    margin: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 13px 11px;
+    width: 144px;
+    height: 132px;
+    background-color: #e7ddde;
+    border: 1px solid #b18d8d;
+}
+.Card > div{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.Card p {
+    font-size: 22px;
+
+}
+.Card button{
+    font-size: 15px;
+    background-color: #ae8e91;
+}
+.Card .draft{
+    padding: 8px 6px;
+}
+.Card .mark{
+    padding: 8px 16px;
+}
+.color{
+    width: 18px;
+    height: 18px;
+    background-color: #d5564f;
+}
+@media screen and (max-width: 500px){
+.Header h1{
+    padding-right: 102px;
+}
+}
+@media screen and (max-width: 460px){
+    .DraftZone h1{
+        padding: 0;
+        text-align: center;
+    }
+    .container{
+        flex-flow: column;
+    }
+    .right, .left{
+        width: 100% !important;
+    }
+    .CardZone{
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
